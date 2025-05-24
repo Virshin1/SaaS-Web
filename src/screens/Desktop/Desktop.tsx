@@ -118,7 +118,7 @@ export const Desktop = (): JSX.Element => {
 
         {/* Decorative Image */}
         <img
-          className="absolute w-[248px] h-[318px] top-[629px] right-0 object-cover"
+          className="absolute w-[248px] h-[318px] top-[629px] right-0 object-cover rotate-3d"
           alt="Half torus"
           src="/half-torus-1.png"
         />

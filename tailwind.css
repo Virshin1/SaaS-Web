@@ -7,6 +7,36 @@
   }
 }
 
+@keyframes rotate3d-slow {
+  from {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+  to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate3d(1, 1, 1, 0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate3d(1, 1, 1, 180deg);
+  }
+}
+
+.rotate-3d {
+  animation: rotate3d-slow 20s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.float-rotate {
+  animation: float 8s ease-in-out infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
 :root {
   --body-bold-font-family: "Inter", Helvetica;
   --body-bold-font-size: 16px;

@@ -103,13 +103,13 @@ export const ProductFeaturesSection = (): JSX.Element => {
 
         {/* Decorative Elements */}
         <img
-          className="absolute w-[167px] h-[248px] bottom-0 left-0 object-cover"
+          className="absolute w-[167px] h-[248px] bottom-0 left-0 object-cover rotate-3d"
           alt="Torus"
           src="/torus-1.png"
         />
 
         <img
-          className="absolute w-[181px] h-[262px] top-1/2 right-0 object-cover"
+          className="absolute w-[181px] h-[262px] top-1/2 right-0 object-cover float-rotate"
           alt="Pyramid"
           src="/pyramid-1.png"
         />

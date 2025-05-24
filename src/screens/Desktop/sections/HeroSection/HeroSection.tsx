@@ -47,7 +47,7 @@ export const HeroSection = (): JSX.Element => {
 
         <div className="relative">
           <img
-            className="absolute w-[216px] h-[197px] top-0 left-[-100px]"
+            className="absolute w-[216px] h-[197px] top-0 left-[-100px] float-rotate"
             alt="Cylinder"
             src="/cylinder-1.png"
           />

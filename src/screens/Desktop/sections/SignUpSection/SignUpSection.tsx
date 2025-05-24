@@ -37,13 +37,13 @@ export const SignUpSection = (): JSX.Element => {
 
         {/* Decorative images */}
         <img
-          className="absolute w-[342px] h-[357px] top-0 left-0 object-cover z-0"
+          className="absolute w-[342px] h-[357px] top-0 left-0 object-cover z-0 rotate-3d"
           alt="Decorative star graphic"
           src="/emojistar-1.png"
         />
 
         <img
-          className="absolute w-[362px] h-[359px] top-[113px] right-0 object-cover z-0"
+          className="absolute w-[362px] h-[359px] top-[113px] right-0 object-cover z-0 float-rotate"
           alt="Decorative helix graphic"
           src="/helix2-1.png"
         />
