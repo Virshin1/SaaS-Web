@@ -25,6 +25,24 @@
   }
 }
 
+@keyframes star-rotate {
+  0% {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes prism-rotate {
+  0% {
+    transform: perspective(1000px) rotateX(45deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(45deg) rotateY(360deg);
+  }
+}
+
 .rotate-3d {
   animation: rotate3d-slow 20s linear infinite;
   transform-style: preserve-3d;
@@ -35,6 +53,20 @@
   animation: float 8s ease-in-out infinite;
   transform-style: preserve-3d;
   perspective: 1000px;
+}
+
+.star-3d {
+  animation: star-rotate 15s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 255, 0.3));
+}
+
+.prism-3d {
+  animation: prism-rotate 12s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 1500px;
+  filter: drop-shadow(0 0 20px rgba(123, 97, 255, 0.4));
 }
 
 :root {
