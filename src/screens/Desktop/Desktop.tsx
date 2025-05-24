@@ -8,6 +8,7 @@ import { PricingSection } from "./sections/PricingSection/PricingSection";
 import { ProductFeaturesSection } from "./sections/ProductFeaturesSection/ProductFeaturesSection";
 import { SignUpSection } from "./sections/SignUpSection/SignUpSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
+import { Scene3D } from "../../components/3d/Scene3D";
 
 export const Desktop = (): JSX.Element => {
   const companyLogos = [
@@ -116,12 +117,10 @@ export const Desktop = (): JSX.Element => {
           </section>
         </div>
 
-        {/* Decorative Image */}
-        <img
-          className="absolute w-[248px] h-[318px] top-[629px] right-0 object-cover rotate-3d"
-          alt="Half torus"
-          src="/half-torus-1.png"
-        />
+        {/* 3D Decorative Shape */}
+        <div className="absolute w-[248px] h-[318px] top-[629px] right-0">
+          <Scene3D type="torus" />
+        </div>
       </div>
     </div>
   );

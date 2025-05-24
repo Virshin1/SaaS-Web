@@ -2,6 +2,7 @@ import { ArrowRightIcon } from "lucide-react";
 import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
+import { Scene3D } from "../../../../components/3d/Scene3D";
 
 export const HeroSection = (): JSX.Element => {
   return (
@@ -46,11 +47,9 @@ export const HeroSection = (): JSX.Element => {
         </div>
 
         <div className="relative">
-          <img
-            className="absolute w-[216px] h-[197px] top-0 left-[-100px] float-rotate"
-            alt="Cylinder"
-            src="/cylinder-1.png"
-          />
+          <div className="absolute w-[216px] h-[197px] top-0 left-[-100px]">
+            <Scene3D type="cylinder" />
+          </div>
 
           <img
             className="w-[648px] h-[648px] object-cover"
